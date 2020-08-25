@@ -28,3 +28,21 @@ address {
   margin: 0px;
   color: #0f0f0f;
 }
+
+.row-content-about {
+  padding-bottom: 40px;
+  margin: 0px auto;
+}
+
+.about-end {
+  padding: 40px;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar-dark {
+  background-color: #512da4;
+}
