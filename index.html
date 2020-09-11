@@ -63,7 +63,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a data-toggle="modal" id="loginClick">
               <span class="fa fa-sign-in"></span>Login
             </a>
           </span>
@@ -154,7 +154,7 @@
             >
           </div>
           <span class="header-text">
-            <a data-toggle="modal" data-target="#reserveModal"></a>
+            <a data-toggle="modal" id="reserveClick"></a>
           </span>
         </div>
       </div>
@@ -524,6 +524,18 @@
             $("#carouselButton").children("span").removeClass("fa-play");
             $("#carouselButton").children("span").addClass("fa-pause");
           }
+        });
+      });
+      // Triggering login modal
+      $(document).ready(function () {
+        $("#loginClick").click(function () {
+          $("#loginModal").modal();
+        });
+      });
+      //Triggering reserve modal
+      $(document).ready(function () {
+        $("#reserveClick").click(function () {
+          $("#reserveModal").modal();
         });
       });
     </script>
